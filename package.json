@@ -1,0 +1,20 @@
+{
+  "name": "fluxportal",
+  "version": "0.1.0",
+  "description": "desktop client for the fluxspace MUD engine",
+  "main": "main.js",
+  "author": "phantummm",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base /dist --inline"
+  },
+  "dependencies": {
+    "elm-webpack-loader": "^4.3.0",
+    "global": "^4.3.1",
+    "webpack": "^2.3.3"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
