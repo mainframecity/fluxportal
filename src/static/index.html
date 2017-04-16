@@ -1,107 +1,10 @@
 <html>
   <head>
    <title>fluxportal</title>
+   <link rel="stylesheet" href="http://localhost:8080/assets/bundle.css" />
   </head>
 
   <body>
-    <style>
-      *,
-      *:before,
-      *:after {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: Courier New, monospace;
-        font-size: 16px;
-        margin: 0;
-        background-color: #000;
-        color: #24bc0d;
-      }
-
-      div.header {
-        text-align: center;
-        padding-top: 10px;
-      }
-
-      div.header h1 {
-        font-family: 'PressStart2p';
-        font-size: 12px;
-      }
-
-      div.header h1::before, div.header h1::after {
-        content: "...";
-      }
-
-      div.buffer {
-        width: 100%;
-        padding: 20px;
-      }
-
-      div.bufferMessage {
-        margin-top: 10px;
-      }
-
-      div.inputContainer {
-        width: 100%;
-        height: 50px;
-        position: fixed;
-        bottom: 0;
-      }
-
-      input.mainInput {
-        display: inline-block;
-        float: left;
-        border: 2px #24bc0d solid;
-        border-right: 0;
-        outline: 0;
-        width: 85%;
-        height: 100%;
-        padding: 0 15px;
-        background-color: #000;
-        color: #24bc0d;
-        font-family: Courier New, monospace;
-        font-size: 18px;
-      }
-
-      input.mainInput:focus {
-        background-color: #24bc0d;
-        color: #000;
-        border-right: 2px #000 solid;
-      }
-
-      input.mainInput::-webkit-input-placeholder {
-        color: #24bc0d;
-      }
-
-      button.sendButton {
-        display: inline-block;
-        float: left; 
-        border: 2px #24bc0d solid;
-        outline: none;
-        width: 15%;
-        height: 100%;
-        background-color: #000;
-        color: #24bc0d;
-        background-color: #000;
-        color: #24bc0d;
-        font-family: Courier New, monospace;
-        font-size: 18px;
-        text-transform: lowercase;
-      }
-
-      button.sendButton:hover {
-        background-color: #24bc0d;
-        color: #000;
-        cursor: pointer;
-      }
-
-      @font-face {
-        font-family: 'PressStart2p';
-        src: url("../fonts/PressStart2P-Regular.ttf");
-        font-weight: normal;
-      }
-    </style>
     <div id="container" width="100%"></div>
     <script src="http://localhost:8080/assets/bundle.js"></script>
   </body>
