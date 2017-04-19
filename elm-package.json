@@ -4,7 +4,8 @@
     "repository": "https://github.com/mainframecity/fluxportal.git",
     "license": "MIT",
     "source-directories": [
-        "src/elm"
+        "src/elm",
+        "src/elm/tests"
     ],
     "exposed-modules": [],
     "dependencies": {
