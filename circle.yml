@@ -1,0 +1,17 @@
+dependencies:
+  cache_directories:
+    - elm-stuff/build-artifacts
+    - src/elm/tests/elm-stuff/build-artifacts
+    - node_modules
+
+  post:
+    - npm install -g elm
+    - npm install -g elm-test
+    - elm-package install -y
+
+    - elm-make src/elm/FluxPortal.elm --output /tmp/main.js
+    - elm-make src/elm/tests/Main.elm --output /tmp/tests.js
+
+test:
+  override:
+    - npm test
