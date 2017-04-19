@@ -11,4 +11,7 @@ yarn run dev
 electron ./main.js
 ```
 
+### Testing
+Run the Elm test-suite with: `yarn test`.
+
 **Note:** running `electron ./main.js` doesn't work from within a tmux session.

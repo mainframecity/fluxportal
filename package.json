@@ -6,12 +6,14 @@
   "author": "phantummm",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --content-base /dist --inline"
+    "dev": "webpack-dev-server --content-base /dist --inline",
+    "test": "elm-test src/elm/tests/Main.elm"
   },
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.28.0",
     "electron": "^1.6.2",
+    "elm-test": "^0.18.2",
     "elm-webpack-loader": "^4.3.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",

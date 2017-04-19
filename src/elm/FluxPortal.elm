@@ -1,3 +1,5 @@
+module FluxPortal exposing (..)
+
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
@@ -79,7 +81,7 @@ subscriptions : Model -> Sub Msg
 subscriptions model =
   Sub.batch
     [ WebSocket.listen websocketUrl NewMessage
-    , Keyboard.downs KeyMsg 
+    , Keyboard.downs KeyMsg
     ]
 
 
